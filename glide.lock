@@ -1,0 +1,51 @@
+hash: e60465c1d7986c7d5ea6e3a0c41e55684a28cf79e972ae4c1dc6e273cd244eb4
+updated: 2016-11-06T08:13:30.8977597+08:00
+imports:
+- name: github.com/agtorre/gocolorize
+  version: f42b554bf7f006936130c9bb4f971afd2d87f671
+- name: github.com/andybalholm/cascadia
+  version: 65919c611220063037b1db8eb334acaf17a6d8ea
+- name: github.com/bradfitz/gomemcache
+  version: fb1f79c6b65acda83063cbc69f6bba1522558bfc
+  subpackages:
+  - memcache
+- name: github.com/garyburd/redigo
+  version: 80f7de34463b0ed3d7c61303e5619efe1b227f92
+  subpackages:
+  - redis
+- name: github.com/klauspost/compress
+  version: 8df558b6cb6f9b445f9586446cfe7223e7d8bd6b
+  subpackages:
+  - gzip
+  - zlib
+- name: github.com/klauspost/cpuid
+  version: 09cded8978dc9e80714c4d85b0322337b0a1e5e0
+- name: github.com/klauspost/crc32
+  version: cb6bfca970f6908083f26f39a79009d608efd5cd
+- name: github.com/PuerkitoBio/goquery
+  version: 152b1a2c8f5d0340f658bb656032a39b94e52958
+- name: github.com/revel/cron
+  version: 6f2e8282a1a0d694e55a48ce7d077ee46747feeb
+- name: github.com/robfig/config
+  version: 0f78529c8c7e3e9a25f15876532ecbc07c7d99e6
+- name: github.com/robfig/go-cache
+  version: 9fc39e0dbf62c034ec4e45e6120fc69433a3ec51
+- name: github.com/robfig/pathtree
+  version: 41257a1839e945fce74afd070e02bab2ea2c776a
+- name: golang.org/x/crypto
+  version: 9477e0b78b9ac3d0b03822fd95422e2fe07627cd
+  subpackages:
+  - bcrypt
+- name: golang.org/x/net/html
+  version: ""
+- name: golang.org/x/net/websocket
+  version: ""
+- name: golang.org/x/sys/unix
+  version: ""
+- name: gopkg.in/fsnotify.v1
+  version: 629574ca2a5df945712d3079857300b5e4da0236
+- name: gopkg.in/mgo.v2
+  version: 3f83fa5005286a7fe593b055f0d7771a7dce4655
+  subpackages:
+  - bson
+testImports: []

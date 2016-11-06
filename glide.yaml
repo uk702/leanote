@@ -1,0 +1,26 @@
+package: .
+import:
+- package: github.com/PuerkitoBio/goquery
+- package: github.com/agtorre/gocolorize
+- package: github.com/bradfitz/gomemcache
+  subpackages:
+  - memcache
+- package: github.com/garyburd/redigo
+  subpackages:
+  - redis
+- package: github.com/klauspost/compress
+  subpackages:
+  - gzip
+  - zlib
+- package: github.com/revel/cron
+- package: github.com/robfig/config
+- package: github.com/robfig/go-cache
+- package: github.com/robfig/pathtree
+- package: golang.org/x/crypto
+  subpackages:
+  - bcrypt
+- package: golang.org/x/net/websocket
+- package: gopkg.in/fsnotify.v1
+- package: gopkg.in/mgo.v2
+  subpackages:
+  - bson
