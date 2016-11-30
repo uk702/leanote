@@ -337,7 +337,11 @@ func Has(collection *mgo.Collection, q interface{}) bool {
 
 // 得到主键和userId的复合查询条件
 func GetIdAndUserIdQ(id, userId string) bson.M {
-	return bson.M{"_id": bson.ObjectIdHex(id), "UserId": bson.ObjectIdHex(userId)}
+	if userId != "" {
+		return bson.M{"_id": bson.ObjectIdHex(id), "UserId": bson.ObjectIdHex(userId)}
+	} else {
+		return bson.M{"_id": bson.ObjectIdHex(id)}
+	}
 }
 func GetIdAndUserIdBsonQ(id, userId bson.ObjectId) bson.M {
 	return bson.M{"_id": id, "UserId": userId}

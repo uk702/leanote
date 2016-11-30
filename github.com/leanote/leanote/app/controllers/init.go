@@ -5,8 +5,9 @@ import (
 	"github.com/leanote/leanote/app/lea/blog"
 	"github.com/leanote/leanote/app/service"
 	//	. "github.com/leanote/leanote/app/lea"
-	"github.com/revel/revel"
 	"strings"
+
+	"github.com/revel/revel"
 )
 
 var userService *service.UserService
@@ -48,7 +49,7 @@ var commonUrl = map[string]map[string]bool{"Index": map[string]bool{"Index": tru
 	"FindPasswordUpdate": true,
 	"Suggestion":         true,
 },
-	"Note": map[string]bool{"ToPdf": true},
+	"Note": map[string]bool{"ToPdf": true, "GetNoteContentDirect": true},
 	"Blog": map[string]bool{"Index": true,
 		"View":               true,
 		"AboutMe":            true,

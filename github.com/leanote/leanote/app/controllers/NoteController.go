@@ -3,14 +3,15 @@ package controllers
 import (
 	"github.com/revel/revel"
 	//	"encoding/json"
-	"github.com/leanote/leanote/app/info"
-	. "github.com/leanote/leanote/app/lea"
-	"gopkg.in/mgo.v2/bson"
 	"os"
 	"os/exec"
 	"regexp"
 	"strings"
 	"time"
+
+	"github.com/leanote/leanote/app/info"
+	. "github.com/leanote/leanote/app/lea"
+	"gopkg.in/mgo.v2/bson"
 	//	"github.com/leanote/leanote/app/types"
 	//	"io/ioutil"
 	"fmt"
@@ -159,6 +160,11 @@ func (c Note) GetNoteAndContent(noteId string) revel.Result {
 // 得到内容
 func (c Note) GetNoteContent(noteId string) revel.Result {
 	noteContent := noteService.GetNoteContent(noteId, c.GetUserId())
+	return c.RenderJson(noteContent)
+}
+
+func (c Note) GetNoteContentDirect(noteId string) revel.Result {
+	noteContent := noteService.GetNoteContent(noteId, "")
 	return c.RenderJson(noteContent)
 }
 

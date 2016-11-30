@@ -43,6 +43,10 @@ POST	/findPasswordUpdate							Auth.FindPasswordUpdate
 # pjax
 GET     /note/:noteId   	                        Note.Index
 
+# Lilx
+* /noted/getNoteContent Note.GetNoteContentDirect
+* /noted/:noteId Note.GetNoteContentDirect
+
 # blog
 
 GET		/blog/getLikesAndComments			Blog.GetLikesAndComments
