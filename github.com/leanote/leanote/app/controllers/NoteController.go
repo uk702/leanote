@@ -165,7 +165,7 @@ func (c Note) GetNoteContent(noteId string) revel.Result {
 
 func (c Note) GetNoteContentDirect(noteId string) revel.Result {
 	noteContent := noteService.GetNoteContent(noteId, "")
-	return c.RenderJson(noteContent)
+	return c.RenderHtml(noteContent.Content)
 }
 
 // 这里不能用json, 要用post
