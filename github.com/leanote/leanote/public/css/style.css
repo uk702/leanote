@@ -1767,6 +1767,12 @@ video#bgvid {
   margin-left: 15px;
 }
 /* Lilx */
+#editor p,br,h1,h2,h3,h4 {
+    margin: 10px 0px 0px 10px;
+}
+#preview-contents p,br,h1,h2,h3,h4 {
+    margin: 20px 0px 0px 20px;
+}
 #preview-contents pre {
     border: 1px solid rgba(0,0,0,0.15); 
 }
@@ -1786,4 +1792,8 @@ video#bgvid {
 }
 #preview-contents pre ol li {
     padding-left: 0px;
+}
+ol {
+    display: block;
+    list-style-type: decimal;
 }
