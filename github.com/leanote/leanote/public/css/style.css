@@ -1782,6 +1782,9 @@ video#bgvid {
     padding-left: 5px;
     margin-bottom: 15px;
 }
+#preview-contents .highlight pre {
+    background: transparent url("../images/code-bk.png") repeat scroll 0% 0%;
+}
 #preview-contents pre.prettyprint {
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
